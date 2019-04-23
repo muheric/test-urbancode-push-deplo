@@ -68,7 +68,7 @@ node {
                 deployWithSnapshot: false
             ]
             
-
-
+    ]
+]
         ])
 }
