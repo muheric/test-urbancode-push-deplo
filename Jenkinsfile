@@ -28,7 +28,7 @@ node {
                 baseDir: 'jobs\\test-ucd\\workspace\\build\\distributions',
                 // fileIncludePatterns: Regex defining what files to include.
                 fileIncludePatterns: '*.zip',
-                / fileExcludePatterns: Regex defining what files to exclude.
+                // fileExcludePatterns: Regex defining what files to exclude.
                 fileExcludePatterns: '',
                 // pushProperties: Assign properties to the new component version. Syntax: KEY=VALUE separated by new lines.
                 pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
