@@ -15,7 +15,7 @@ node {
                baseDir: '${WORKSPACE}/build/distributions',  
                 fileIncludePatterns: '*.zip',
                 fileExcludePatterns: '',
-                pushProperties: 'jenkins.server=Local\jenkins.reviewed=false',
+                pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
                 pushDescription: 'Pushed from Jenkins',
                 pushIncremental: false
             ]
