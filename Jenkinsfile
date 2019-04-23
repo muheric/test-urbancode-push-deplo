@@ -12,7 +12,7 @@ node {
             delivery: [
                 $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeliveryHelper$Push',
                 pushVersion: '${BUILD_NUMBER}',
-                baseDir: 'jobs\\test-ucd\\workspace\\build\\distributions',
+                baseDir: 'jobs\\Jenkins-to_ucd\\workspace\\build\\distributions',  
                 fileIncludePatterns: '*.zip',
                 fileExcludePatterns: '',
                 pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
