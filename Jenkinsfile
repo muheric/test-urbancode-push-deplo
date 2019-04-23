@@ -18,7 +18,21 @@ node {
                 pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
                 pushDescription: 'Pushed from Jenkins',
                 pushIncremental: false
-            ]
+            ],
+           
+           
+           deploy: [
+            $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeployHelper$DeployBlock',
+            deployApp: 'Jenkins',
+            deployEnv: 'Test',
+            deployProc: 'Deploy Jenkins',
+            createProcess: [
+                $class: 'com.urbancode.jenkins.plugins.ucdeploy.ProcessHelper$CreateProcessBlock',
+                processComponent: 'Deploy'
+            ],
+            deployVersions: 'Jenkins:${BUILD_NUMBER}',
+            deployOnlyChanged: false
+        ]
         ]
     ])
 }
